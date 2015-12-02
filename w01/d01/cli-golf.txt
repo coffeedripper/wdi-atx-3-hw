@@ -1,0 +1,285 @@
+Last login: Mon Nov 30 17:25:31 on console
+nvm is not compatible with the npm config "prefix" option: currently set to "/Users/Mac/.nvm/versions/node/v5.1.0"
+Run `npm config delete prefix` or `nvm use --delete-prefix v5.1.0 --silent` to unset it.
+ GA General Assembly  Web Development Immersive 
+------------------------------------------
+git version 2.6.3
+Homebrew 0.9.5 (git revision 93a8; last commit 2015-11-30)
+ruby 2.2.3p173 (2015-08-18 revision 51636) [x86_64-darwin14]
+node v4.2.2
+psql (PostgreSQL) 9.4.5
+------------------------------------------
+type unwelcome to remove this message
+mac ~
+$ pwd
+/Users/mac
+mac ~
+$ ls
+Applications/	  Documents/  Google Drive/  Music/	Public/  fundamentals/
+Calibre Library/  Downloads/  Library/	     Pictures/	World/	 funny_things/
+Desktop/	  Dropbox/    Movies/	     Projects/	code/	 joke,txt
+mac ~
+$ cd code/
+mac ~/code
+$ cd kitchen/
+mac ~/code/kitchen
+$ ls
+cans.txt  fridge/  pantry/
+mac ~/code/kitchen
+$ rm cans.text
+rm: cannot remove ‘cans.text’: No such file or directory
+mac ~/code/kitchen
+$ rm cans.txt
+removed ‘cans.txt’
+mac ~/code/kitchen
+$ rm fridge/diapers.txt
+removed ‘fridge/diapers.txt’
+mac ~/code/kitchen
+$ rm fridge/freezer/couch.txt fridge/trashcan/sink/delete-me.txt 
+removed ‘fridge/freezer/couch.txt’
+removed ‘fridge/trashcan/sink/delete-me.txt’
+mac ~/code/kitchen
+$ rm fridge/.DS_Store
+removed ‘fridge/.DS_Store’
+mac ~/code/kitchen
+$ mv fridge/trashcan/ kitchen/
+‘fridge/trashcan/’ -> ‘kitchen/’
+mac ~/code/kitchen
+$ mv kitchen/ trashcan/
+‘kitchen/’ -> ‘trashcan/’
+mac ~/code/kitchen
+$ pwd
+/Users/mac/code/kitchen
+mac ~/code/kitchen
+$ pwd
+/Users/mac/code/kitchen
+mac ~/code/kitchen
+$ ls
+fridge/  pantry/  trashcan/
+mac ~/code/kitchen
+$ cd trashcan/
+mac ~/code/kitchen/trashcan
+$ ls
+banana-peels.txt  chicken-bones.txt  egg-shells.txt  sink/
+mac ~/code/kitchen/trashcan
+$ mv <sink/> ..
+-bash: ..: Is a directory
+mac ~/code/kitchen/trashcan
+$ cd sink/
+mac ~/code/kitchen/trashcan/sink
+$ mv <sink> ..
+-bash: sink: No such file or directory
+mac ~/code/kitchen/trashcan/sink
+$ mv <sink>/ ..
+-bash: sink: No such file or directory
+mac ~/code/kitchen/trashcan/sink
+$ cd 
+mac ~/code/kitchen/trashcan
+$ mv <sink>/ ..
+-bash: /: Is a directory
+mac ~/code/kitchen/trashcan
+$ mv <sink/>/ ..
+-bash: /: Is a directory
+mac ~/code/kitchen/trashcan
+$ cd trashcan/sink/
+-bash: cd: trashcan/sink/: No such file or directory
+mac ~/code/kitchen/trashcan
+$ pwd
+/Users/mac/code/kitchen/trashcan
+mac ~/code/kitchen/trashcan
+$ cd sink/
+mac ~/code/kitchen/trashcan/sink
+$ mv * ../
+‘clean-dishes.txt’ -> ‘../clean-dishes.txt’
+‘dirty-dishes.txt’ -> ‘../dirty-dishes.txt’
+mac ~/code/kitchen/trashcan/sink
+$ mv sink/ ..
+mv: cannot stat ‘sink/’: No such file or directory
+mac ~/code/kitchen/trashcan/sink
+$ pwd
+/Users/mac/code/kitchen/trashcan/sink
+mac ~/code/kitchen/trashcan/sink
+$ cd ..
+mac ~/code/kitchen/trashcan
+$ cd..
+-bash: cd..: command not found
+mac ~/code/kitchen/trashcan
+$ cd ..
+mac ~/code/kitchen
+$ mkdir sink/
+mkdir: created directory ‘sink/’
+mac ~/code/kitchen
+$ cd sink/
+mac ~/code/kitchen/sink
+$ ls
+mac ~/code/kitchen/sink
+$ cd sink/
+-bash: cd: sink/: No such file or directory
+mac ~/code/kitchen/sink
+$ pwd
+/Users/mac/code/kitchen/sink
+mac ~/code/kitchen/sink
+$ ls
+mac ~/code/kitchen/sink
+$ cd sink/
+-bash: cd: sink/: No such file or directory
+mac ~/code/kitchen/sink
+$ cd trashcan/
+-bash: cd: trashcan/: No such file or directory
+mac ~/code/kitchen/sink
+$ ls
+mac ~/code/kitchen/sink
+$ mv * ../
+mv: cannot stat ‘*’: No such file or directory
+mac ~/code/kitchen/sink
+$ ls
+mac ~/code/kitchen/sink
+$ pwd
+/Users/mac/code/kitchen/sink
+mac ~/code/kitchen/sink
+$ cd trashcan/
+-bash: cd: trashcan/: No such file or directory
+mac ~/code/kitchen/sink
+$ cd ..
+mac ~/code/kitchen
+$ cd trashcan/sink/
+mac ~/code/kitchen/trashcan/sink
+$ mv */ ..
+mv: cannot stat ‘*/’: No such file or directory
+mac ~/code/kitchen/trashcan/sink
+$ ls
+clean-dishes.txt  dirty-dishes.txt
+mac ~/code/kitchen/trashcan/sink
+$ ls
+clean-dishes.txt  dirty-dishes.txt
+mac ~/code/kitchen/trashcan/sink
+$ tree
+.
+├── clean-dishes.txt
+└── dirty-dishes.txt
+
+0 directories, 2 files
+mac ~/code/kitchen/trashcan/sink
+$ mv * ../
+‘clean-dishes.txt’ -> ‘../clean-dishes.txt’
+‘dirty-dishes.txt’ -> ‘../dirty-dishes.txt’
+mac ~/code/kitchen/trashcan/sink
+$ cd ..
+mac ~/code/kitchen/trashcan
+$ mv banana-peels.txt ../
+‘banana-peels.txt’ -> ‘../banana-peels.txt’
+mac ~/code/kitchen/trashcan
+$ mv chicken-bones.txt ~/mac/code/kitchen/trashcan/
+‘chicken-bones.txt’ -> ‘/Users/mac/mac/code/kitchen/trashcan/’
+mv: cannot move ‘chicken-bones.txt’ to ‘/Users/mac/mac/code/kitchen/trashcan/’: No such file or directory
+mac ~/code/kitchen/trashcan
+$ mv chicken-bones.txt users/mac/code/kitchen/trashcan/
+‘chicken-bones.txt’ -> ‘users/mac/code/kitchen/trashcan/’
+mv: cannot move ‘chicken-bones.txt’ to ‘users/mac/code/kitchen/trashcan/’: No such file or directory
+mac ~/code/kitchen/trashcan
+$ mv chicken-bones.txt ../
+‘chicken-bones.txt’ -> ‘../chicken-bones.txt’
+mac ~/code/kitchen/trashcan
+$ rm sink/
+rm: cannot remove ‘sink/’: Is a directory
+mac ~/code/kitchen/trashcan
+$ pwd
+/Users/mac/code/kitchen/trashcan
+mac ~/code/kitchen/trashcan
+$ rm sink/
+rm: cannot remove ‘sink/’: Is a directory
+mac ~/code/kitchen/trashcan
+$ rm dir sink/
+rm: cannot remove ‘dir’: No such file or directory
+rm: cannot remove ‘sink/’: Is a directory
+mac ~/code/kitchen/trashcan
+$ ls
+clean-dishes.txt  dirty-dishes.txt  egg-shells.txt  sink/
+mac ~/code/kitchen/trashcan
+$ rmdir sink/
+mac ~/code/kitchen/trashcan
+$ cd ../sink/
+mac ~/code/kitchen/sink
+$ mkdir drying-rack/
+mkdir: created directory ‘drying-rack/’
+mac ~/code/kitchen/sink
+$ cd ../trashcan/
+mac ~/code/kitchen/trashcan
+$ mv clean-dishes.txt dirty-dishes.txt ../sink/
+‘clean-dishes.txt’ -> ‘../sink/clean-dishes.txt’
+‘dirty-dishes.txt’ -> ‘../sink/dirty-dishes.txt’
+mac ~/code/kitchen/trashcan
+$ cd ../
+mac ~/code/kitchen
+$ cd sink/
+mac ~/code/kitchen/sink
+$ mv clean-dishes.txt drying-rack/
+‘clean-dishes.txt’ -> ‘drying-rack/clean-dishes.txt’
+mac ~/code/kitchen/sink
+$ cd ..
+mac ~/code/kitchen
+$ pwd
+/Users/mac/code/kitchen
+mac ~/code/kitchen
+$ ls
+banana-peels.txt  chicken-bones.txt  fridge/  pantry/  sink/  trashcan/
+mac ~/code/kitchen
+$ mv banana-peels.txt chicken-bones.txt trashcan/
+‘banana-peels.txt’ -> ‘trashcan/banana-peels.txt’
+‘chicken-bones.txt’ -> ‘trashcan/chicken-bones.txt’
+mac ~/code/kitchen
+$ mkdir crisper-drawer/ fridge/
+mkdir: created directory ‘crisper-drawer/’
+mac ~/code/kitchen
+$ cd fridge/
+mac ~/code/kitchen/fridge
+$ mkdir crisper-drawer/
+mkdir: created directory ‘crisper-drawer/’
+mac ~/code/kitchen/fridge
+$ cd crisper-drawer/
+mac ~/code/kitchen/fridge/crisper-drawer
+$ touch apples.txt
+mac ~/code/kitchen/fridge/crisper-drawer
+$ touch lettuce.txt 
+mac ~/code/kitchen/fridge/crisper-drawer
+$ cd ../../
+mac ~/code/kitchen
+$ rmdir crisper-drawer/
+mac ~/code/kitchen
+$ rmdir pantry/crisper-drawer/
+rmdir: failed to remove ‘pantry/crisper-drawer/’: Directory not empty
+mac ~/code/kitchen
+$ rmdir -r pantry/crisper-drawer/
+rmdir: invalid option -- 'r'
+Try 'rmdir --help' for more information.
+mac ~/code/kitchen
+$ rm pantry/crisper-drawer/lettuce.txt
+removed ‘pantry/crisper-drawer/lettuce.txt’
+mac ~/code/kitchen
+$ rmdir pantry/crisper-drawer/
+mac ~/code/kitchen
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── dirty-dishes.txt
+│   └── drying-rack
+│       └── clean-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+7 directories, 12 files
+mac ~/code/kitchen
+$ 
