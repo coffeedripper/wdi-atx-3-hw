@@ -7,3 +7,6 @@ class Word
     return @original_word.downcase
   end
 end
+
+jet = Word.new( " jet ")
+puts jet.inspect

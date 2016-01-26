@@ -1,0 +1,8 @@
+SELECT id, name, age, games, points, FROM players WHERE team = NYK;
+SELECT id, name, age, games, points, FROM players WHERE team = IND
+AND age < 26;
+SELECT * FROM players ORDER BY points DESC;
+#4 makes no sense..."top 20 points per game"???
+SELECT FROM players
+SELECT (age / ?) FROM players;
+SELECT (age / ())
